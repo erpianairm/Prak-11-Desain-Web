@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Container style */
+.container {
+    max-width: 1200px; /* Optional: Set maximum width for the container */
+}
+
+/* Image container style */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image style */
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay style */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: rgba(252, 211, 123, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caption style */
+.caption {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+/* Hover effect on thumbnail */
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
